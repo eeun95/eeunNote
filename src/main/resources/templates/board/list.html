@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="/fragments/header.html :: fragment-header"></div>
+</head>
+<body>
+    <div class="container">
+
+        <table class="table">
+            <colgroup>
+                <col width="15%"/>
+                <col width="50%"/>
+                <col width="20%"/>
+                <col width="15%"/>
+            </colgroup>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>test</td>
+                <td>test</td>
+                <td>2022-08-25</td>
+            </tr>
+        </table>
+
+    </div> <!-- /container -->
+    <footer th:replace="/fragments/footer.html :: fragment-footer"></footer>
+</body>
+</html>
