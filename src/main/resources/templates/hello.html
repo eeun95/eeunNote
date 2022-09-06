@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <div th:replace="/fragments/header.html :: fragment-header"></div>
+    <div th:replace="/fragments/head.html :: fragment-head"></div>
 </head>
 <body>
-<div class="container">
-    <div>
-        <h1>eeunNote</h1>
-        <p>
-            <a href="/member/join">회원 가입</a>
-        </p>
-        <p>
-            <a href="/board/list">게시판목록</a>
-            <a href="/board/write">글쓰기</a>
-        </p>
-    </div>
-</div> <!-- /container -->
-<footer th:replace="/fragments/footer.html :: fragment-footer"></footer>
+
+    <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+    <div class="container">
+        <div>
+            <p>
+                <a href="/member/join">회원 가입</a>
+                <a href="/member/login">로그인</a>
+            </p>
+            <p>
+                <a href="/board/list">게시판목록</a>
+                <a href="/board/write">글쓰기</a>
+            </p>
+        </div>
+    </div> <!-- /container -->
+    <footer th:replace="/fragments/footer.html :: fragment-footer"></footer>
 </body>
 </html>

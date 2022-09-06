@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <div th:replace="/fragments/header.html :: fragment-header"></div>
+    <div th:replace="/fragments/head.html :: fragment-head"></div>
 </head>
 <body>
-<div class="container">
-</div> <!-- /container -->
-<footer th:replace="/fragments/footer.html :: fragment-footer"></footer>
+
+    <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+
+    <div class="container">
+    </div> <!-- /container -->
+    <footer th:replace="/fragments/footer.html :: fragment-footer"></footer>
 </body>
 </html>
