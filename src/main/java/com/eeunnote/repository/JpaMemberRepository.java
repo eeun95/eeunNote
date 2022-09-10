@@ -5,14 +5,5 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-public class JpaMemberRepository implements MemberRepository {
-    @Override
-    public Member save(Member member) {
-        return null;
-    }
-
-    @Override
-    public Optional<Member> findById(String id) {
-        return Optional.empty();
-    }
+public class JpaMemberRepository {
 }
